@@ -6,7 +6,7 @@ EXPOSE 3000
 
 COPY . .
 
-RUN npm intall
+RUN npm install
 
 
 CMD ["node", "index.js"]
