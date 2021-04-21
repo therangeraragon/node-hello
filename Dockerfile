@@ -1,15 +1,12 @@
 FROM node:alpine
 
-RUN mkdir -p /usr/src/app
-
 WORKDIR /usr/src/app
 
 EXPOSE 3000
 
-COPY package.json package.json
+COPY . .
 
 RUN npm intall
 
-COPY . .
 
 CMD ["node", "index.js"]
